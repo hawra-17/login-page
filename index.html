@@ -4,31 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <title> Log in </title>
 </head>
-<body class="h-screen flex-col justify-center items-center bg-white">
-    <div class=" mt-32 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center  gap-x-4 bottom justify-center  ">
-      <form> <!-- i need to put it with label and input to make a textbox -->
+<body class="bg-gray-200/70 h-screen flex justify-center items-center shadow-lg">  
+        <form class="flex flex-col items-center p-24 rounded-2xl w-80 sm:w-1/2 shadow-xl"> <!-- i need to put it with label and input to make a textbox -->
+            <div class=" mt-32 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex flex-col items-center  gap-x-4 justify-center  "> 
+                    <div>
+                        <p class="text-xl text-black top-1 flex items-center justify-center font-bold ">log In page </p>
+                    </div> <!-- for title -->
 
 
-     <div>
-        <div class="text-xl font-medium text-black top-1 flex items-center justify-center font-bold ">log In page </div>
-     </div> <!-- for title -->
 
-     <div>
-      <label for="Email" class="block mb-10 text-sm font-medium"> </label>
-      <input type="text" id="Email" class="rounded-lg shadow-lg flex items-center bg-gray-600 text-slate-200 px-2 py-3" placeholder="Email or Phone number" required />
-    </div> <!-- for take email or number -->
+                    <div class="py-4">
+                      <label for="Email" class="text-sm font-medium">Email </label>
+                      <input type="text" id="Email" class="rounded-lg shadow-lg flex items-center bg-gray-600 text-slate-200 px-2 py-3" placeholder="Email or Phone number" required />
+                    </div> <!-- for take email or number -->
 
-    <div>
-      <lab for="password" class="block mb-10 texr-sm font-medium"> </lab>
-      <input type: = password id="password" class="rounded-lg shadow-lg flex items-center  bg-gray-600 text-slate-200 px-2 py-3" placeholder="*****************" required />
-    </div>
-     
-    <div> 
-    <button type="button" class="text-white bg-blue-600/80 rounded-lg mb-10  mt-10 text-sm px-20 py-2 "> Log In  </button>
-  </div>
+                    <div>
+                      <label for="password" class="texr-sm font-medium">Password</label>
+                      <input type: = password id="password" class="rounded-lg shadow-lg flex items-center  bg-gray-600 text-slate-200 px-2 py-3" placeholder="*****************" required />
+                    </div>
 
-  </div> <!-- end of the small page -->
-</form>
+                    <div> 
+                    <button onclick="printfun()"  type="button" class="text-white bg-blue-600/80 rounded-lg hover:scale-110 transition-all my-10 text-sm px-20 py-2 mt-10"> Log In  </button>
+                  </div>
+                  
+                  <script>
+                    function printfun() {
+                      alert("Sign in successfully ^_^");
+                    }
+                    </script>
+
+
+                  </div> <!-- end of the small page -->
+        </form>
 </body>
 </html>
